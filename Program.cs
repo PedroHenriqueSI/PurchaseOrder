@@ -44,7 +44,11 @@ namespace ORDER
                 int qtdProduct = int.Parse(Console.ReadLine());
                 OrderItem orderItem = new OrderItem(qtdProduct, priceProduct, product);
                 order.AddItem(orderItem);
+                
             }
+            Console.WriteLine();
+            Console.WriteLine("ORDER SUMMARY:");
+            Console.Write(order);
         }
     }
 }
